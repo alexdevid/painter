@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/Painter.css">
+    </head>
+    <body style="">
+        <canvas id="Painter" width="1500" height="800" style="border: 1px solid #999; margin: 0 auto;"></canvas>
+        <div id="PainterPanel">
+            <div class="icon brush" title="Кисть" id="toolBrush" data-id="Brush"><i class="fa fa-fire"></i></div>
+            <div class="icon pencil" title="Карандаш" id="toolPencil" data-id="Pencil"><i class="fa fa-pencil"></i></div>
+            <div class="icon eraser" title="Ластик" id="toolEraser" data-id="Eraser"><i class="fa fa-eraser"></i></div>
+            <input type="color" name="colorPicker" id="colorPicker" class="icon" title="Цвет" value="#0000ff">
+            <br><br>
+            <label for="opacityValue">Прозрачность:</label><br>
+            <input class="input" type="number" name="opacityValue" id="opacityValue" value="5" min="5" max="100" step ="1"><br>
+            <label for="strokeWidthValue">Размер кисти:</label><br>
+            <input class="input" type="number" name="strokeWidthValue" id="strokeWidthValue" value="1" min="1" max="100" step ="1">
+            <br><br>
+            <div class="icon history-back" title="Отменить"><i class="fa fa-mail-reply"></i></div>
+            <div class="icon history-forward" title="Вернуть"><i class="fa fa-mail-forward"></i></div>
+            <div class="icon save" title="Сохранить" style="float: right"><i class="fa fa-save"></i></div>
+        </div>
+        <script src="js/jscolor/jscolor.js"></script>
+        <script src="js/Painter.js"></script>
+    </body>
+</html>
